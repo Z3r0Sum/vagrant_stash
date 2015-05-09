@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#Pull in Git Submodules
+echo "Bringing in submodule dependencies for Vagrant projects"
+git submodule init
+git submodule update
+
 echo "Starting NFS Server (hostname:nfs-server)"
 echo ""
 #Start the NFS Server first
