@@ -69,3 +69,7 @@
 	path = nfs-server/puppet/modules/stdlib
 	url = https://github.com/puppetlabs/puppetlabs-stdlib
 	branch = master
+[submodule "stash-server/puppet/modules/stash"]
+	path = stash-server/puppet/modules/stash
+	url = https://github.com/puppet-community/puppet-stash
+	branch = master
