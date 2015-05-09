@@ -1,0 +1,40 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure(2) do |config|
+  config.vm.box      = 'jkyle/centos-7.0-x86_64'
+  config.vm.hostname = 'nfs-server'
+  config.vm.network "private_network", ip: "172.16.254.10"
+ 
+  #Use fusion provider
+  config.vm.provider "vmware_fusion" do |v|
+      v.vmx["memsize"]  = "512"
+      v.vmx["numvcpus"] = "1"
+  end
+
+  config.vm.provision :shell do |shell|
+    #create facter dir
+    fact_dir     = '/etc/facter/facts.d'
+    mkdir_facter = "mkdir -p #{fact_dir}"
+
+    #Add Facts
+    fact_profile = "echo 'profile=nfs_server' >> #{fact_dir}/profile.txt"
+    fact_env     = "echo 'env=prod' >> #{fact_dir}/env.txt"
+
+    #Run the Cmds
+    shell.inline = "#{mkdir_facter};#{fact_profile};#{fact_env}"
+  end
+
+  #Use Puppet to provision
+  config.vm.provision :puppet do |puppet|
+    puppet.hiera_config_path = 'puppet/hiera.yaml'
+    puppet.working_directory = '/vagrant/puppet'
+    puppet.manifests_path    = 'puppet/manifests'
+    puppet.manifest_file     = 'site.pp'
+    puppet.module_path       = 'puppet/modules'
+  end
+end

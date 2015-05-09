@@ -1,0 +1,54 @@
+[submodule "stash-server/puppet/modules/stdlib"]
+	path = stash-server/puppet/modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib
+[submodule "stash-server/puppet/modules/concat"]
+	path = stash-server/puppet/modules/concat
+	url = https://github.com/puppetlabs/puppetlabs-concat
+[submodule "stash-server/puppet/modules/inifile"]
+	path = stash-server/puppet/modules/inifile
+	url = https://github.com/puppetlabs/puppetlabs-inifile
+[submodule "stash-server/puppet/modules/java"]
+	path = stash-server/puppet/modules/java
+	url = https://github.com/puppetlabs/puppetlabs-java
+[submodule "stash-server/puppet/modules/postgresql"]
+	path = stash-server/puppet/modules/postgresql
+	url = https://github.com/puppetlabs/puppetlabs-postgresql
+[submodule "stash-server/puppet/modules/selinux"]
+	path = stash-server/puppet/modules/selinux
+	url = https://github.com/Z3r0Sum/puppet-selinux
+[submodule "stash-server/puppet/modules/staging"]
+	path = stash-server/puppet/modules/staging
+	url = https://github.com/nanliu/puppet-staging
+[submodule "stash-server/puppet/modules/firewalld"]
+	path = stash-server/puppet/modules/firewalld
+	url = https://github.com/crayfishx/puppet-firewalld
+[submodule "production-standby/puppet/modules/concat"]
+	path = production-standby/puppet/modules/concat
+	url = https://github.com/puppetlabs/puppetlabs-concat
+[submodule "production-standby/puppet/modules/inifile"]
+	path = production-standby/puppet/modules/inifile
+	url = https://github.com/puppetlabs/puppetlabs-inifile
+[submodule "production-standby/puppet/modules/postgresql"]
+	path = production-standby/puppet/modules/postgresql
+	url = https://github.com/puppetlabs/puppetlabs-postgresql
+[submodule "production-standby/puppet/modules/selinux"]
+	path = production-standby/puppet/modules/selinux
+	url = https://Z3r0Sum@github.com/Z3r0Sum/puppet-selinux
+[submodule "production-standby/puppet/modules/stdlib"]
+	path = production-standby/puppet/modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib
+[submodule "production-standby/puppet/modules/firewalld"]
+	path = production-standby/puppet/modules/firewalld
+	url = https://github.com/crayfishx/puppet-firewalld
+[submodule "nfs-server/puppet/modules/concat"]
+	path = nfs-server/puppet/modules/concat
+	url = https://github.com/puppetlabs/puppetlabs-concat
+[submodule "nfs-server/puppet/modules/firewalld"]
+	path = nfs-server/puppet/modules/firewalld
+	url = https://github.com/crayfishx/puppet-firewalld
+[submodule "nfs-server/puppet/modules/selinux"]
+	path = nfs-server/puppet/modules/selinux
+	url = https://Z3r0Sum@github.com/Z3r0Sum/puppet-selinux
+[submodule "nfs-server/puppet/modules/stdlib"]
+	path = nfs-server/puppet/modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib

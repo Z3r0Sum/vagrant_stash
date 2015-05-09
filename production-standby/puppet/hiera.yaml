@@ -1,0 +1,9 @@
+---
+:backends:
+  - yaml
+:yaml:
+  :datadir: '/vagrant/puppet/hieradata'
+:hierarchy:
+  - "profiles/%{::env}/%{::profile}"
+  - "%{::profile}"
+  - common

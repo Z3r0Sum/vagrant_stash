@@ -1,0 +1,7 @@
+---
+pgsql_server::postgres_password: 'supersecret'
+pgsql_server::ipv4acls: 'host stashdb stashuser all trust'
+pgsql_server::db_name: 'stashdb'
+pgsql_server::user: 'stashuser'
+pgsql_server::password: 'password'
+pgsql_server::role: 'stashuser'
