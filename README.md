@@ -56,7 +56,7 @@
     
 
  	```shell
-     cd ###TODO add directory
+     cd vagrant_stash
      ./boot_strap_project.sh
     ```
     
