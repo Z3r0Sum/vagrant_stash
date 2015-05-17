@@ -61,3 +61,15 @@
 	path = stash-server/puppet/modules/stash
 	url = https://github.com/puppet-community/puppet-stash
 	branch = master
+[submodule "nfs-server/puppet/modules/firewalld"]
+	path = nfs-server/puppet/modules/firewalld
+	url = https://github.com/crayfishx/puppet-firewalld
+	branch = master
+[submodule "stash-server/puppet/modules/firewalld"]
+	path = stash-server/puppet/modules/firewalld
+	url = https://github.com/crayfishx/puppet-firewalld
+	branch = master
+[submodule "production-standby/puppet/modules/firewalld"]
+	path = production-standby/puppet/modules/firewalld
+	url = https://github.com/crayfishx/puppet-firewalld
+	branch = master
