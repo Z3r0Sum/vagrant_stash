@@ -12,7 +12,6 @@ class profiles::stash::server {
   $homedir             = hiera('stash::homedir')
   $javahome            = hiera('stash::javahome')
   $dburl               = hiera('stash::dburl')
-  $user                = hiera('stash::user')
   $backupclientVersion = hiera('stash::backupclientVersion')
   $backup_home         = hiera('stash::backup_home')
   $backupuser          = hiera('stash::backupuser')
@@ -29,7 +28,6 @@ class profiles::stash::server {
   class { '::stash':
     version             => $version,
     installdir          => $installdir,
-    user                => $user,
     homedir             => $homedir,
     javahome            => $javahome,
     dbuser              => $dbuser,
