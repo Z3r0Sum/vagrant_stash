@@ -9,7 +9,7 @@ stash::version: '3.8.0'
 stash::installdir: '/opt/atlassian/application-data'
 stash::homedir: '/opt/atlassian/application-data/stash-home'
 stash::javahome: '/etc/alternatives/jre_1.8.0'
-stash::dburl: 'jdbc:postgresql://localhost:5432/${db_name}'
+stash::dburl: "jdbc:postgresql://localhost:5432/stashdb"
 stash::backupclientVersion: '1.6.0'
 stash::backup_home: '/opt/stash-backup'
 stash::backupuser: 'stash'
