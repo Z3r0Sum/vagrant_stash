@@ -25,10 +25,6 @@
 	path = stash-server/puppet/modules/staging
 	url = https://github.com/nanliu/puppet-staging
 	branch = master
-[submodule "stash-server/puppet/modules/firewalld"]
-	path = stash-server/puppet/modules/firewalld
-	url = https://github.com/crayfishx/puppet-firewalld
-	branch = master
 [submodule "production-standby/puppet/modules/concat"]
 	path = production-standby/puppet/modules/concat
 	url = https://github.com/puppetlabs/puppetlabs-concat
@@ -49,17 +45,9 @@
 	path = production-standby/puppet/modules/stdlib
 	url = https://github.com/puppetlabs/puppetlabs-stdlib
 	branch = master
-[submodule "production-standby/puppet/modules/firewalld"]
-	path = production-standby/puppet/modules/firewalld
-	url = https://github.com/crayfishx/puppet-firewalld
-	branch = master
 [submodule "nfs-server/puppet/modules/concat"]
 	path = nfs-server/puppet/modules/concat
 	url = https://github.com/puppetlabs/puppetlabs-concat
-	branch = master
-[submodule "nfs-server/puppet/modules/firewalld"]
-	path = nfs-server/puppet/modules/firewalld
-	url = https://github.com/crayfishx/puppet-firewalld
 	branch = master
 [submodule "nfs-server/puppet/modules/selinux"]
 	path = nfs-server/puppet/modules/selinux
